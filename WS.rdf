@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS/"
+     xml:base="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS/"
+     xmlns:WS="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#"
+     xmlns:ws="http://www.semanticweb.org/rifkh/ontologies/2023/6/ws#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#mempunyai -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#mempunyai">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#desa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#wisata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#terdapat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#terdapat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#kecamatan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#desa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#deskripsi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#deskripsi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#wisata"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#jeniswisata -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#jeniswisata">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#wisata"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#namadesa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#namadesa">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#desa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#namakecamatan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#namakecamatan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#kecamatan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#namawisata -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#namawisata">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#wisata"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#desa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#desa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#lokasi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#kecamatan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#kecamatan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#lokasi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#lokasi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#lokasi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#wisata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#wisata"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#desa1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#desa1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#desa"/>
+        <WS:mempunyai rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#wisata1"/>
+        <WS:namadesa>Colo</WS:namadesa>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#desa2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#desa2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#desa"/>
+        <WS:mempunyai rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#wisata2"/>
+        <WS:namadesa>Japan</WS:namadesa>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#kecamatan1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#kecamatan1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#kecamatan"/>
+        <WS:terdapat rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#desa1"/>
+        <WS:terdapat rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#desa2"/>
+        <WS:namakecamatan>Dawe</WS:namakecamatan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#wisata1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#wisata1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#wisata"/>
+        <WS:deskripsi>Sunan Muria Adalah Walisongo</WS:deskripsi>
+        <WS:jeniswisata>Religi</WS:jeniswisata>
+        <WS:namawisata>Sunan Muria</WS:namawisata>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#wisata2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#wisata2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rifkh/ontologies/2023/6/WS#wisata"/>
+        <WS:deskripsi>Merupakan Air Terjun</WS:deskripsi>
+        <WS:jeniswisata>Alam</WS:jeniswisata>
+        <WS:namawisata>Air Terjun Montel</WS:namawisata>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
